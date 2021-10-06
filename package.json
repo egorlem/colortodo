@@ -1,0 +1,46 @@
+{
+  "name": "colorful-todo",
+  "displayName": "Colorful TODO",
+  "description": "Highlighting TODO comments",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "path": "./syntaxes/hltodo.jsdoc.json",
+        "scopeName": "jsdoc-comment",
+        "injectTo": [
+          "source.js",
+          "source.jsx",
+          "source.ts",
+          "source.tsx",
+          "source.html",
+          "source.php",
+          "source.css",
+          "source.scss",
+          "source.c"
+        ]
+      },
+      {
+        "path": "./syntaxes/hltodo.doubleslash.json",
+        "scopeName": "double-slash-comment",
+        "injectTo": [
+          "source.js",
+          "source.jsx",
+          "source.ts",
+          "source.tsx",
+          "source.html",
+          "source.php",
+          "source.css",
+          "source.scss",
+          "source.c"
+        ]
+      }
+    ]
+  }
+}

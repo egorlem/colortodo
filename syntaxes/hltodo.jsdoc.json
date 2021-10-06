@@ -1,0 +1,31 @@
+{
+  "scopeName": "jsdoc-comment",
+  "injectionSelector": [
+      "L:comment.block.documentation"
+    ],
+  "patterns": [
+    {
+      "include": "#todo-keyword-jsdoc"
+    },
+    {
+      "include": "#todo-keyword-jsdoc"
+    },
+    {
+      "include": "#fixit-keyword-jsdoc"
+    }
+  ],
+  "repository": {
+    "todo-keyword-jsdoc": {
+      "match": "@TODO|@todo",
+      "name": "keyword.todo.jsdoc"
+    },
+    "fixit-keyword-jsdoc": {
+      "match": "@FIXIT|@fixit",
+      "name": "keyword.fixit.jsdoc"
+    },
+    "note-keyword-jsdoc": {
+      "name": "keyword.note.jsdoc",
+      "match": "@NOTE|@note"
+    }
+  }
+}
